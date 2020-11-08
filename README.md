@@ -12,11 +12,11 @@ console.log(await shell.receive());
 From NPM:
 
 ```
-npm install --save webadb
+npm install --save https://github.com/fordownloads/webadb.js
 ```
 
-From CDN:
+From yarn:
 
-```html
-<script src="https://cdn.jsdelivr.net/gh/webadb/webadb.js@master/webadb.js"></script>
+```
+yarn add https://github.com/fordownloads/webadb.js
 ```

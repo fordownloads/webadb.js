@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+import { openDB } from 'idb'; 
 
 (function(root, factory) {
 	if (typeof define === 'function' && define.amd) {
@@ -980,7 +981,7 @@
 
 	function init_db()
 	{
-		let req = window.indexedDB.open("WebADB", 1);
+		let req = openDB("WebADB", 1);
 
 		req.onupgradeneeded = function (event) {
 			let db = event.target.result;
