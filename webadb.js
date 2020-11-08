@@ -1020,4 +1020,7 @@ function clear_keys(db) {
 	});
 }
 
-module.exports = Adb;
+module.exports = {
+	Adb: Adb,
+	Fastboot: Fastboot
+};
